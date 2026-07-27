@@ -1,0 +1,13 @@
+{
+  "name": "github-actions-capstone",
+  "version": "1.0.0",
+  "description": "Simple Express application for GitHub Actions Capstone",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "./test.sh"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
