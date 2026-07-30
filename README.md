@@ -1,14 +1,22 @@
 # GitHub Actions Capstone
 
+![PR Pipeline](https://github.com/yochetan/github-actions-capstone/actions/workflows/pr-pipeline.yml/badge.svg)
+
+![Main Pipeline](https://github.com/yochetan/github-actions-capstone/actions/workflows/main-pipeline.yml/badge.svg)
+
+![Health Check](https://github.com/yochetan/github-actions-capstone/actions/workflows/health-check.yml/badge.svg)
+
 A simple Node.js Express application built for practicing GitHub Actions CI/CD workflows.
 
 ## Features
 
-- Express web server
-- Health endpoint
-- Docker support
-- Simple health check test
-- Ready for GitHub Actions pipelines
+- Node.js Express application
+- Dockerized application
+- Reusable GitHub Actions workflows
+- PR validation pipeline
+- Main branch deployment pipeline
+- Scheduled health checks
+- Production deployment using GitHub Environments
 
 ## Endpoints
 
