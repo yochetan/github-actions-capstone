@@ -8,6 +8,7 @@
     "test": "./test.sh"
   },
   "dependencies": {
+    "brace-expansion": "^2.1.2",
     "express": "^4.21.2"
   }
 }
