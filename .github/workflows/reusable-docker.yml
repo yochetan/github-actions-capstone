@@ -47,8 +47,11 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           context: .
           push: true
+          no-cache: true 
           tags: ${{ secrets.docker_username }}/${{ inputs.image_name }}:${{ inputs.tag }}
 
       - name: Set image URL output
