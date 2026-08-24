@@ -1,8 +1,6 @@
-FROM node:22-alpine
+FROM node:24.19.0-alpine
 
 WORKDIR /app
-
-RUN npm install -g npm@latest
 
 COPY package*.json ./
 
@@ -10,7 +8,6 @@ RUN npm ci
 
 COPY . .
 
-# Make the test script executable
 RUN chmod +x test.sh
 
 EXPOSE 3000
