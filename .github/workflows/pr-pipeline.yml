@@ -9,6 +9,16 @@ on:
       - synchronize
 
 jobs:
+  dependency-review:
+    name: Check Dependencies for Vulnerabilities
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Dependencies for Vulnerabilities
+        uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: critical
+          
   build-test:
     uses: ./.github/workflows/reusable-build-test.yml
     with:
