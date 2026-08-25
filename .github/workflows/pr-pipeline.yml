@@ -18,8 +18,9 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: critical
-          
+
   build-test:
+    needs: dependency-review
     uses: ./.github/workflows/reusable-build-test.yml
     with:
       node_version: "22"
